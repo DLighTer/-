@@ -35,7 +35,7 @@
  
  $username="root";
  
- $conn=mysqli_connect('localhost','root','root','test');
+ $conn=mysqli_connect('localhost','root','root','test');//分别代表对应数据库服务器地址、用户名、密码、所要操作的数据库名称//
  
  mysqli_query($conn,"set names utf8");
  
