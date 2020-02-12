@@ -1,5 +1,7 @@
-<?php
- $username="root";
+?php
+ 
+ $username=$_POST['id'];
+ 
  $conn=mysqli_connect('localhost','root','herewego666','liuyanban');//分别代表对应数据库服务器地址、用户名、密码、所要操作的数据库名称//
  
  mysqli_query($conn,"set names utf8");
@@ -20,7 +22,7 @@
          while($row=mysqli_fetch_assoc($result)){
              echo "
                  <div>
-                     <p id='msg'><span id='username'>".$row['username']."</span>".$row['msg']."</p>
+                     <p id='msg'><span id='username'>".$row['username']."</span> :".$row['msg']."</p>
                  </div>
              ";
          }
